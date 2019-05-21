@@ -41,7 +41,6 @@ fi
 if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
   SPACESHIP_PROMPT_ORDER=(
     brace_top     # Top Brace
-    time          # Time stampts section
     user          # Username section
     dir           # Current directory section
     host          # Hostname section
@@ -68,7 +67,6 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     ember         # Ember.js section
     kubectl       # Kubectl context section
     terraform     # Terraform workspace section
-    exec_time     # Execution time
     line_sep      # Line break
     brace_bottom  # Bottom Brace
     battery       # Battery level and status
@@ -81,7 +79,8 @@ fi
 
 if [ -z "$SPACESHIP_RPROMPT_ORDER" ]; then
   SPACESHIP_RPROMPT_ORDER=(
-    # empty by default
+    exec_time     # Execution time
+    time          # Time stampts section
   )
 fi
 
