@@ -40,6 +40,7 @@ fi
 
 if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
   SPACESHIP_PROMPT_ORDER=(
+    brace_top     # Top Brace
     time          # Time stampts section
     user          # Username section
     dir           # Current directory section
@@ -69,6 +70,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     terraform     # Terraform workspace section
     exec_time     # Execution time
     line_sep      # Line break
+    brace_bottom  # Bottom Brace
     battery       # Battery level and status
     vi_mode       # Vi-mode indicator
     jobs          # Background jobs indicator
