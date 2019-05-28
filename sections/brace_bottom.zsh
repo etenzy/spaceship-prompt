@@ -1,25 +1,25 @@
-#                                                                               
-# Prompt character                                                              
-#                                                                               
-                                                                                
+#
+# Prompt character
+#
+
 # ------------------------------------------------------------------------------
-# Configuration                                                                 
+# Configuration
 # ------------------------------------------------------------------------------
-                                                                                
-SPACESHIP_BRACE_BOTTOM_PREFIX="${SPACESHIP_BRACE_BOTTOM_PREFIX=""}"             
-SPACESHIP_BRACE_BOTTOM_SUFFIX="${SPACESHIP_BRACE_BOTTOM_SUFFIX=""}"             
-SPACESHIP_BRACE_BOTTOM_SYMBOL="${SPACESHIP_BRACE_BOTTOM_SYMBOL="╰─"}"           
-SPACESHIP_BRACE_BOTTOM_COLOR="${SPACESHIP_BRACE_BOTTOM_COLOR="white"}"          
-                                                                                
+
+SPACESHIP_BRACE_BOTTOM_PREFIX="${SPACESHIP_BRACE_BOTTOM_PREFIX=""}"
+SPACESHIP_BRACE_BOTTOM_SUFFIX="${SPACESHIP_BRACE_BOTTOM_SUFFIX=""}"
+SPACESHIP_BRACE_BOTTOM_SYMBOL="${SPACESHIP_BRACE_BOTTOM_SYMBOL="╰─"}"
+SPACESHIP_BRACE_BOTTOM_COLOR="${SPACESHIP_BRACE_BOTTOM_COLOR="white"}"
+
 # ------------------------------------------------------------------------------
-# Section                                                                       
+# Section
 # ------------------------------------------------------------------------------
-                                                                                
-spaceship_brace_bottom() {                                                      
-                                                                                
-  spaceship::section \                                                          
-    "$SPACESHIP_BRACE_BOTTOM_COLOR" \                                           
-    "$SPACESHIP_BRACE_BOTTOM_PREFIX" \                                          
-    "$SPACESHIP_BRACE_BOTTOM_SYMBOL" \                                          
-    "$SPACESHIP_BRACE_BOTTOM_SUFFIX"                                            
-}                                                                               
+
+spaceship_brace_bottom() {
+
+  spaceship::section \
+    "$SPACESHIP_BRACE_BOTTOM_COLOR" \
+    "$SPACESHIP_BRACE_BOTTOM_PREFIX" \
+    "$SPACESHIP_BRACE_BOTTOM_SYMBOL" \
+    "$SPACESHIP_BRACE_BOTTOM_SUFFIX"
+}
