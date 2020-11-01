@@ -35,6 +35,7 @@ SPACESHIP_PROMPT_ORDER=(
   julia         # Julia section
   docker        # Docker section
   aws           # Amazon Web Services section
+  gcloud        # Google Cloud Platform section
   venv          # virtualenv section
   conda         # conda virtualenv section
   pyenv         # Pyenv section
@@ -425,6 +426,18 @@ Shows selected Amazon Web Services profile configured using  [`AWS_PROFILE`](htt
 | `SPACESHIP_AWS_SYMBOL` | `☁️·` | Character to be shown before AWS profile |
 | `SPACESHIP_AWS_COLOR` | `208` | Color of AWS section |
 
+### Google Cloud Platform (`gcloud`)
+
+Shows active Google Cloud Platform configuration using gcloud active configuration file.
+
+| Variable | Default | Meaning |
+| :------- | :-----: | ------- |
+| `SPACESHIP_GCLOUD_SHOW` | `true` | Show current active gcloud configuration or not |
+| `SPACESHIP_GCLOUD_PREFIX` | `using·` | Prefix before the GCLOUD section |
+| `SPACESHIP_GCLOUD_SUFFIX` | `$SPACESHIP_PROMPT_DEFAULT_SUFFIX` | Suffix after the GCLOUD section |
+| `SPACESHIP_GCLOUD_SYMBOL` | `☁️· ` | Character to be shown before GCLOUD active configuration |
+| `SPACESHIP_GCLOUD_COLOR` | `26` | Color of GCLOUD section |
+
 ### Virtualenv (`venv`)
 
 | Variable | Default | Meaning |
@@ -604,6 +617,8 @@ You can temporarily enable or disable vi-mode with handy functions (just execute
 | :------- | ------- |
 | `spaceship_vi_mode_enable` | Enable vi-mode for current terminal session |
 | `spaceship_vi_mode_disable` | Disable vi-mode for current terminal session |
+
+**Note:** If the prompt does not refresh when changing modes add `eval spaceship_vi_mode_enable` to your `.zshrc`. Beware that `spaceship_vi_mode_enable` will override the`zle-keymap-select` widget, so if you have a custom one just make sure it contains the line `zle reset-prompt ; zle -R`.
 
 **Note:** For oh-my-zsh users with vi-mode plugin enabled: Add `export RPS1="%{$reset_color%}"` before `source $ZSH/oh-my-zsh.sh` in `.zshrc` to disable default `<<<` NORMAL mode indicator in right prompt.
 
